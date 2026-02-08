@@ -1,21 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/qris",
-      "dest": "/api/qris.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ],
   "headers": [
     {
       "source": "/api/(.*)",
@@ -26,7 +9,7 @@
         },
         {
           "key": "Access-Control-Allow-Methods",
-          "value": "GET,OPTIONS"
+          "value": "GET, OPTIONS"
         },
         {
           "key": "Access-Control-Allow-Headers",
