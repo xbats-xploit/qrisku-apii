@@ -1,0 +1,13 @@
+{
+  "name": "qris-api-cobaaaja88",
+  "version": "1.0.0",
+  "description": "API QRIS Dinamis untuk COBAAJA88",
+  "main": "api/qris.js",
+  "scripts": {
+    "dev": "node api/qris.js"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "@agungjsp/qris-dinamis": "^1.0.7"
+  }
+}
